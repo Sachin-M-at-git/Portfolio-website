@@ -1,0 +1,304 @@
+.name{
+    color: #3559E0;
+}
+
+.profile-pic{
+  transition: box-shadow 2s ease-out;
+}
+
+.profile-pic:hover{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.iconbtn {
+    height: 50px;
+    width: 50px;
+    background-color:navy;
+}
+
+.iconbtn:hover {
+  background: linear-gradient(-45deg,#07e2df ,#ef2a41, #0ABFBC);
+	background-size: 200% 200%;
+	animation: gradient 2.5s ease infinite;
+}
+
+.f-text {
+    color: gray;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.card-title{
+  color: darkblue;
+}
+
+.year{
+  color: green;
+}
+
+.cardv{
+  border-radius: 12px;
+  padding-top: 10px;
+}
+
+.cardv:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#progress-bar {
+  border-radius: 0px 5px 5px 0px;
+  margin-top: 96px;
+  position: fixed;
+  top: 0;
+  --progress: 0;
+  height: 6px;
+  width: var(--progress);
+  background: linear-gradient(-200deg,royalblue,rgb(24, 24, 250),#607ccf);
+	background-size: 200% 200%;
+	animation: progress-anim 2s ease infinite;
+  z-index: 1;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media (max-width: 576px) {
+  #progress-bar{
+    margin-top: 96px;
+    position: fixed;
+  }
+
+  #hero{
+    padding-top: 90px;
+  }
+}
+
+@media (min-width: 992px){
+
+  #hero{
+    padding-top: 130px;
+  }
+}
+
+.border-b{
+  border-bottom: dashed 10px rosybrown;
+}
+
+/*background anim gradient*/
+
+body {
+	background: linear-gradient(-45deg, #FBE7DA, #F5D6E5, #C5EDF4, #DBFAE0);
+	background-size: 2000%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/**/
+@keyframes progress-anim {
+  from {
+    background-position: 200% center;
+  }
+}
+
+/*background anim shapes*/
+
+.circles{
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+
+}
+
+/*job text anim*/
+
+#job {
+	margin: auto;
+	color:chocolate;
+}
+
+/*text anim*/
+
+.anim-text
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/*img border*/
+.pic-frame {
+  --color: #daa520; /* the border color */
+  --border: 10px;   /* the border thickness*/
+  --offset: 20px;   /* control the offset*/
+  --gap: 5px;       /* the gap on hover */
+  
+  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+  --_o: calc(3*var(--offset));
+  padding: 
+    calc(var(--gap) + var(--border))
+    calc(var(--gap) + var(--border) + var(--offset))
+    calc(var(--gap) + var(--border) + var(--offset))
+    calc(var(--gap) + var(--border));
+  background: 
+    linear-gradient(      var(--_c)) var(--_o) var(--_o), 
+    linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+  background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+  background-repeat: no-repeat;
+  filter: grayscale(.4);
+  transition: .5s;
+  cursor: pointer;
+}
+.pic-frame:hover {
+  background-position: 0px 0px;
+  background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+  filter: grayscale(0);
+}

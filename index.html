@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Sachin's Portfolio</title>
+    <link rel="icon" href="/assets/profilepic-round.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <section class="backanimshapes">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+    </section>
+
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+          <div class="container-fluid flex-lg-row">
+            <a class="navbar-brand px-5" href="/index.html">
+                <img src="/assets/SachinLogo.png" alt="Sachin" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-lg-end navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav flex-lg-row gap-lg-5 px-lg-5 align-items-sm-center">
+                    <li class="nav-item">
+                    <a class="nav-link tab active pt-lg-1 fs-3" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tab fs-4" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tab fs-4" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tab fs-4" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tab fs-4" href="/projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tab fs-4" href="/contacts.html">Contacts</a>
+                    </li>
+                </ul>
+              </div>
+          </div>
+      </nav>
+      <div id="progress-bar"></div>
+    </section>
+
+    <!--hero-->
+    <section id="hero" class="border-b">
+        <div class="container col-xxl-8 px-4 pb-3">
+            <div class="row flex-lg-row-reverse g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="/assets/profilepic.jpg" class="profile-pic d-block mx-lg-auto rounded-circle img-fluid" alt="Bootstrap Themes" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <div class="py-lg-5"></div>
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 pt-lg-4 mb-3">Hi,</h1>
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">I'm <span class="name">Sachin M</span></h1>
+                <h2 class="fw-bold text-body-emphasis lh-1 mb-3">I'm a <span id="job"></span></h2>
+                <div class="d-flex mt-5 gap-3 justify-content-start">
+                    <a href="#" class="rounded-circle lh-1 d-flex justify-content-center align-items-center iconbtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                          </svg>
+                     </a>
+
+                    <a href="#" class="rounded-circle lh-1 d-flex justify-content-center align-items-center iconbtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+                    </a>
+
+                    <a href="#" class="rounded-circle lh-1 d-flex justify-content-center align-items-center iconbtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                          </svg>
+                    </a>
+
+                    <a href="#" class="rounded-circle lh-1 d-flex justify-content-center align-items-center iconbtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-telegram" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+                          </svg>
+                    </a>
+
+                    <a href="#" class="rounded-circle lh-1 d-flex justify-content-center align-items-center iconbtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                          </svg>
+                    </a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about-->
+    <section id="about" class="border-b">
+        <div class="container px-4 py-5">
+            <div class="d-flex gap-3 justify-content-start align-items-center mt-lg-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" fill="gray" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>
+                <h2 class="pb-2 fw-bold display-5 anim-text">About me</h2>
+              </div> 
+            <div class="row flex-lg-row align-items-center g-5 py-5">
+              <div class="col-12 col-sm-8 col-lg-4 align-self-lg-start">
+                <img src="/assets/profilepic.jpg" class="pic-frame d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-8">
+                <div class="mx-auto">
+                    <h5 class="fw-bold text-body-emphasis">Frontend Developer & UI Enthusiast</h5>
+                    <p class="lead mb-4 fw-normal">I'm a frontend developer driven by a passion for creating stunning user interfaces. My journey into web development started with a love for beautiful designs, all accompanied by the comforting aroma of coffee.</p>
+                    <h5 class="fw-bold text-body-emphasis">Why Coffee? Because Inspiration Begins with a Sip</h5>
+                    <p class="lead mb-4 fw-normal">Learning to code is my ritual, and a cup of coffee is my companion. There's something magical about sipping on that rich brew while unraveling the mysteries of code. It transforms the learning process into a dynamic and enjoyable experience.</p>
+                    <h5 class="fw-bold text-body-emphasis">Let's Build Something Beautiful</h5>
+                    <p class="lead mb-4 fw-normal">Whether it's responsive websites, cutting-edge frameworks, or simply enjoying the process of creation, I'm eager to push the boundaries of what's possible. Let's connect and create something extraordinary together.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!--skills-->
+    <section id="skills" class="border-b pt-lg-5">
+        <div class="container px-4 py-5" id="icon-grid">
+
+            <div class="d-flex gap-3 justify-content-start align-items-center mb-5">
+              <svg height="100px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#45CCFF;" d="M500.989,331.041v13.29c0,20.623-16.714,37.337-37.326,37.337H48.337 c-20.612,0-37.326-16.714-37.326-37.337v-13.29H500.989z"></path> <path style="fill:#EFEFEF;" d="M500.989,68.567v262.474H11.011V68.567c0-20.612,16.714-37.326,37.326-37.326h415.326 C484.275,31.24,500.989,47.955,500.989,68.567z"></path> <path style="fill:#2C82C9;" d="M333.075,480.76c-51.384,0-102.767,0-154.151,0c12.022-32.827,17.426-66.269,17.734-99.097 c39.561,0,79.121,0,118.683,0C315.651,414.492,321.055,447.932,333.075,480.76z"></path> <g> <path style="fill:#231F20;" d="M463.663,20.23H48.337C21.683,20.23,0,41.914,0,68.567v275.764 c0,26.659,21.683,48.348,48.336,48.348h136.992c-1.233,26.663-6.004,52.508-14.226,77.07h-33.468 c-6.08,0-11.011,4.93-11.011,11.011c0,6.081,4.931,11.011,11.011,11.011h236.731c6.08,0,11.011-4.93,11.011-11.011 c0-6.081-4.931-11.011-11.011-11.011h-33.468c-8.222-24.564-12.993-50.409-14.226-77.07h136.991 c26.654,0,48.337-21.689,48.337-48.348V68.567C512,41.914,490.317,20.23,463.663,20.23z M22.022,68.567 c0-14.51,11.806-26.316,26.315-26.316h415.326c14.511,0,26.316,11.805,26.316,26.316V320.03H22.022V68.567z M317.757,469.75 H194.243c7.593-24.703,11.997-50.527,13.14-77.07h97.234C305.761,419.221,310.165,445.044,317.757,469.75z M489.979,344.332 c0,14.517-11.806,26.327-26.316,26.327H48.337c-14.51,0-26.315-11.81-26.315-26.327v-2.279H489.98v2.279H489.979z"></path> <path style="fill:#231F20;" d="M402.818,275.99H165.734c-6.08,0-11.011,4.93-11.011,11.011c0,6.081,4.931,11.011,11.011,11.011 h237.085c6.08,0,11.011-4.93,11.011-11.011C413.829,280.919,408.899,275.99,402.818,275.99z"></path> <path style="fill:#231F20;" d="M110.955,275.99h-1.773c-6.08,0-11.011,4.93-11.011,11.011c0,6.081,4.931,11.011,11.011,11.011 h1.772c6.08,0,11.011-4.93,11.011-11.011C121.965,280.919,117.035,275.99,110.955,275.99z"></path> <path style="fill:#231F20;" d="M409.973,158.442L335.275,94.58c-4.62-3.952-11.572-3.408-15.524,1.214 c-3.952,4.622-3.409,11.572,1.214,15.524l64.908,55.493l-64.908,55.493c-4.622,3.952-5.165,10.902-1.214,15.524 c2.178,2.547,5.265,3.856,8.374,3.856c2.531,0,5.075-0.869,7.149-2.641l74.698-63.862c2.448-2.092,3.856-5.15,3.856-8.369 S412.421,160.534,409.973,158.442z"></path> <path style="fill:#231F20;" d="M102.028,175.181l74.697,63.862c2.074,1.774,4.618,2.641,7.149,2.641 c3.107,0,6.197-1.308,8.374-3.856c3.952-4.622,3.409-11.572-1.214-15.524l-64.907-55.493l64.907-55.493 c4.622-3.952,5.165-10.902,1.214-15.524c-3.951-4.622-10.902-5.166-15.524-1.214l-74.697,63.862 c-2.448,2.092-3.856,5.15-3.856,8.369S99.58,173.089,102.028,175.181z"></path> <path style="fill:#231F20;" d="M224.514,263.536c1.132,0.369,2.281,0.544,3.411,0.544c4.639,0,8.954-2.955,10.468-7.605 l56.155-172.509c1.883-5.782-1.279-11.996-7.061-13.878c-5.784-1.883-11.996,1.279-13.878,7.062l-56.155,172.509 C215.57,255.44,218.732,261.654,224.514,263.536z"></path> </g> </g></svg>
+              <h2 class="pb-2 fw-bold display-5 anim-text">My Skills</h2>
+            </div>          
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+              <div class="cardv col d-flex align-items-start">
+
+                <div class="rounded text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi p-1" width="2.5em" height="2.5em" viewBox="0 0 128 128">
+                        <path fill="#0074BD" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"></path><path fill="#EA2D2E" d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"></path><path fill="#0074BD" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zm40.697 22.747c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z"></path><path fill="#EA2D2E" d="M76.491 1.587S89.459 14.563 64.188 34.51c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815C58.041 28.42 81.722 22.195 76.491 1.587z"></path><path fill="#0074BD" d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"></path>
+                    </svg>
+                </div>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Java Programming</h3>
+                  <p>I have a basic knowledge of Java Programming.</p>
+                </div>
+              </div>
+              <div class="cardv col d-flex align-items-start">
+                <div class="rounded text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi p-1" width="2.5em" height="2.5em" viewBox="0 0 128 128">
+                        <linearGradient id="python-original-a" gradientUnits="userSpaceOnUse" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#5A9FD4"></stop><stop offset="1" stop-color="#306998"></stop></linearGradient><linearGradient id="python-original-b" gradientUnits="userSpaceOnUse" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#FFD43B"></stop><stop offset="1" stop-color="#FFE873"></stop></linearGradient><path fill="url(#python-original-a)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z" transform="translate(0 10.26)"></path><path fill="url(#python-original-b)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z" transform="translate(0 10.26)"></path><radialGradient id="python-original-c" cx="1825.678" cy="444.45" r="26.743" gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B8B8B8" stop-opacity=".498"></stop><stop offset="1" stop-color="#7F7F7F" stop-opacity="0"></stop></radialGradient><path opacity=".444" fill="url(#python-original-c)" d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z"></path>
+                    </svg>
+                </div>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Python Programming</h3>
+                  <p>  I have a basic knowledge of  Python Programming.</p>
+                </div>
+              </div>
+              <div class="cardv col d-flex align-items-start">
+                <div class="rounded text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi p-1" width="2.5em" height="2.5em" viewBox="0 0 128 128">
+                        <path fill="#659AD3" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"></path><path fill="#03599C" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"></path><path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"></path>
+                    </svg>
+                </div>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">C Programming</h3>
+                  <p>  I have a basic knowledge of  C Programming.</p>
+                </div>
+              </div>
+              <div class="cardv col d-flex align-items-start">
+                <div class="rounded text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi p-1" width="2.5em" height="2.5em" viewBox="0 0 128 128">
+                        <path fill="#D26383" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"></path><path fill="#9C033A" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"></path><path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"></path><path d="M82.1 61.8h5.2v-5.3h4.4v5.3H97v4.4h-5.3v5.2h-4.4v-5.2h-5.2v-4.4zm18.5 0h5.2v-5.3h4.4v5.3h5.3v4.4h-5.3v5.2h-4.4v-5.2h-5.2v-4.4z" fill="#fff"></path>
+                    </svg>
+                </div>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">C++ Programming</h3>
+                  <p>  I have a basic knowledge of  C++ Programming.</p>
+                </div>
+              </div>
+              <div class="cardv col d-flex align-items-start">
+                <div class="rounded text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi p-1" width="2.5em" height="2.5em" viewBox="0 0 128 128">
+                        <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"></path><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path>
+                    </svg>
+                </div>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">HTML</h3>
+                  <p>  I have a basic knowledge of  HTML.</p>
+                </div>
+              </div>
+              <div class="cardv col d-flex align-items-start">
+                <div class="rounded text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi p-1" width="2.5em" height="2.5em" viewBox="0 0 128 128">
+                        <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"></path><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"></path><path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path>
+                    </svg>
+                </div>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">CSS</h3>
+                  <p>  I have a basic knowledge of  CSS.</p>
+                </div>
+              </div>
+              <div class="cardv col d-flex align-items-start">
+                <div class="rounded text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi p-1" width="2.5em" height="2.5em" viewBox="0 0 128 128">
+                        <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"></path>
+                    </svg>
+                </div>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">JavaScript</h3>
+                  <p>  I have a basic knowledge of  JavaScript Programming.</p>
+                </div>
+              </div>
+              <div class="cardv col d-flex align-items-start">
+                <div class="rounded text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi p-1" width="2.5em" height="2.5em" viewBox="0 0 128 128">
+                        <path fill="#83CD29" d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623C42.594 41 41 42.061 41 42.773v50.49c0 3.896-3.524 7.773-10.11 4.48L18.723 90.73c-.424-.23-.723-.693-.723-1.181V38.407c0-.482.555-.966.982-1.213l44.424-25.561c.415-.235 1.025-.235 1.439 0l43.882 25.555c.42.253.272.722.272 1.219v51.142c0 .488.183.963-.232 1.198l-44.086 25.576c-.378.227-.847.227-1.261 0l-11.307-6.749c-.341-.198-.746-.269-1.073-.086-3.146 1.783-3.726 2.02-6.677 3.043-.726.253-1.797.692.41 1.929l14.798 8.754a9.294 9.294 0 004.647 1.246c1.642 0 3.25-.426 4.667-1.246l43.885-25.582c2.87-1.672 4.23-4.764 4.23-8.083V38.407c0-3.319-1.36-6.414-4.229-8.073zM77.91 81.445c-11.726 0-14.309-3.235-15.17-9.066-.1-.628-.633-1.379-1.272-1.379h-5.731c-.709 0-1.279.86-1.279 1.566 0 7.466 4.059 16.512 23.453 16.512 14.039 0 22.088-5.455 22.088-15.109 0-9.572-6.467-12.084-20.082-13.886-13.762-1.819-15.16-2.738-15.16-5.962 0-2.658 1.184-6.203 11.374-6.203 9.105 0 12.461 1.954 13.842 8.091.118.577.645.991 1.24.991h5.754c.354 0 .692-.143.94-.396.24-.272.367-.613.335-.979-.891-10.568-7.912-15.493-22.112-15.493-12.631 0-20.166 5.334-20.166 14.275 0 9.698 7.497 12.378 19.622 13.577 14.505 1.422 15.633 3.542 15.633 6.395 0 4.955-3.978 7.066-13.309 7.066z"></path>
+                    </svg>        
+                </div>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Node js   </h3>
+                  <p>  I have a basic knowledge of  Node js.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!--Education-->
+    <section id="education" class="border-b pt-5">
+
+        <div class="px-4 py-5">
+            <div class="d-flex gap-3 mb-3 justify-content-start align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" fill="currentColor" class="" viewBox="0 0 16 16">
+                    <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
+                    <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
+                </svg>
+                <h2 class="d-block mb-4 pb-2 fw-bold display-5 anim-text">My Education</h2>
+            </div>
+            <div class="col-lg-6 mx-auto">
+                <div class="card mb-sm-5 mb-lg-4" style="max-width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="/assets/college.jpeg" class="img-fluid rounded-start" alt="Ramakrishna Mission Vivekananda College">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title fs-3 fw-semibold">Bachelor Of Computer Application</h5>
+                          <p class="card-text">Ramakrishna Mission Vivekananda College | UNOM</p>
+                          <h6 class="year fs-5 fw-semibold">2022-2025 | Pursuing</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-5"></div>
+                  <div class="card mb-3" style="max-width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="/assets/school.jpg" width="100%" class="img-fluid rounded-start" alt="Doveton Boys' Higher Secondary School">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title fs-3 fw-semibold">HSC Science | Computer Science</h5>
+                          <p class="card-text">Doveton Boys' Higher Secondary School | CISCE</p>
+                          <h6 class="year fs-5 fw-semibold">2020-2022 | Completed</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+    </section>
+
+    
+    <!--footer-->
+
+    <footer class="bg-dark">
+        <div class="container-fluid">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-4 mb-0 text-white">© 2024 Sachin{ }, Inc</p>
+          
+              <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="/assets/codedev.png" alt="CodeDev{ }" height="70px">
+              </a>
+          
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#home" class="nav-link px-2 text-white">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link px-2 f-text">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link px-2 f-text">Skills</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link px-2 f-text">Education</a></li>
+                <li class="nav-item"><a href="/projects.html" class="nav-link px-2 f-text">Projects</a></li>
+                <li class="nav-item"><a href="/contacts.html" class="nav-link px-2 f-text">Contacts</a></li>
+              </ul>
+            </footer>
+          </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
